@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Library Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <p>A table will come below</p>
+        <div class="form-wrapper">
+            <form class="form">
+                <label for="title">Title</label> <br>
+                <input type="text" required id = 'title' name="title" placeholder="Enter Book Title" data-input> <br>
+                <label for="author">Author</label> <br>
+                <input type="text" required id = 'author' name="author" placeholder="Enter Book Author" data-input> <br>
+                <label for="pages">Pages</label> <br>
+                <input type="text" required id = 'pages' name="pages" placeholder="Enter Number Of Pages" data-input> <br>
+                    <p>Have you read this book?</p>
+                    <input type="radio" required id="yesBox" name="read-status" class="read-status" value="yes"> 
+                    <label for="yesBox">yes</label> <br>
+                    <input type="radio" required id="noBox" name="read-status" class="read-status" value="no"> 
+                    <label for="noBox">no</label> <br><br>
+                    <input type="submit" id="submit" value="submit"> <br>
+
+            </form>
+        </div>
+        <div class="table-wrapper"></div>
+        
+    </body>
+</html>
