@@ -6,29 +6,45 @@
         <title> Library Project</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <script src="./script.js" defer></script>
     </head>
     <body>
-        <p>A table will come below</p>
-        <div class="form-wrapper">
-            <form class="form">
-                <label for="title">Title</label> <br>
-                <input type="text" required id = 'title' name="title" placeholder="Enter Book Title" data-input> <br>
-                <label for="author">Author</label> <br>
-                <input type="text" required id = 'author' name="author" placeholder="Enter Book Author" data-input> <br>
-                <label for="pages">Pages</label> <br>
-                <input type="text" required id = 'pages' name="pages" placeholder="Enter Number Of Pages" data-input> <br>
-                    <p>Have you read this book?</p>
-                    <input type="radio" required id="yesBox" name="read-status" class="read-status" value="yes"> 
-                    <label for="yesBox">yes</label> <br>
-                    <input type="radio" required id="noBox" name="read-status" class="read-status" value="no"> 
-                    <label for="noBox">no</label> <br><br>
-                    <input type="submit" id="submit" value="submit"> <br>
-
-            </form>
+        <div class="form-container">
+            <h1>BookShelf</h1>
+            <div class="form-wrapper">
+                <form class="form">
+                    <div>
+                        <label class="main-label" for="title">Title</label>
+                        <input class="main-input" type="text" required id = 'title' name="title" placeholder="Enter Book Title" data-input>
+                    </div>
+                    <div>
+                        <label class="main-label" for="author">Author</label>
+                        <input class="main-input"  type="text" required id = 'author' name="author" placeholder="Enter Book Author" data-input>
+                    </div>
+                    <div>
+                        <label class="main-label"for="pages">Pages</label>
+                        <input class="main-input"  type="text" required id = 'pages' name="pages" placeholder="Enter Number Of Pages" data-input>
+                    </div>
+                    <p class="sub-text">Have you read this book?</p>
+                    <div class="checkbox-wrapper">
+                        <input type="radio" required id="yesBox" name="read-status" class="read-status main-checkbox" value="yes">
+                        <label class="sub-label" for="yesBox">Yes</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="radio" required id="noBox" name="read-status" class="read-status main-checkbox" value="no">
+                        <label class="sub-label" for="noBox">No</label>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn" type="submit" id="submit" value="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="table-wrapper"></div>
         </div>
-        <div class="table-wrapper"></div>
         
     </body>
 </html>
