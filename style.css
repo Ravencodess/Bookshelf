@@ -1,6 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-container {
+   border-radius: 1rem;
+   box-shadow: 12px 7px 20px 6px rgb(57 75 84 / 8%);
+   padding: 3rem 2rem;
+   width: 80vw;
+   max-width: 50rem;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.form-container h1 {
+    color: cadetblue;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.main-label {
+    display: block;
+    margin-bottom: .3rem;
+}
+.main-input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid plum;
+    margin-bottom: 1rem;
+    padding: 1rem .5rem;
+    height: 4rem;
+    width: 100%;
+}
+
+.main-label, .sub-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.sub-text {
+    margin-bottom: 1rem;
+}
+
+.sub-label {
+    font-size: 1.4rem;
+}
+
+.checkbox-wrapper {
+    margin-bottom: .7rem;
+}
+
+.main-checkbox {
+    margin-right: .8rem;
+}
+
+.btn {
+   border: none;
+   border-radius: .4rem;
+   background-color: #E530D9;
+   color: #fff;
+   cursor: pointer;
+   outline: 0;
+   padding: 1rem 2rem;
+   margin: 1rem 0;
+   font-weight: 700;
+   text-transform: uppercase;
+   width: 40%;
+   opacity: .8;
+   transition: all .4s ease;
+}
+
+.btn:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+button {
+    background-color: cyan;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    outline: none;
+    padding: .5rem;
+    margin: .5rem;
+}
+
 table {
-     border-collapse: collapse; 
-    }
-/* table td { 
-    border-bottom: 1px solid black; 
-} */
+    border-collapse: collapse;
+    border-spacing: 100px 0;
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+th {
+    height: 2rem;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+td {
+    padding: 1rem;
+}
