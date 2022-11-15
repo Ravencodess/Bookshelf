@@ -150,5 +150,3 @@ submitBtn.addEventListener('click', (e) =>{
   } else return
 })
 
-
-console.log("hello");
